@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		390DC4DC254AA45D00491EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DA254AA45D00491EB6 /* Main.storyboard */; };
 		390DC4DE254AA45F00491EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DD254AA45F00491EB6 /* Assets.xcassets */; };
 		390DC4E1254AA45F00491EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DF254AA45F00491EB6 /* LaunchScreen.storyboard */; };
+		4051DFD03708CDAAE9AA0642 /* Pods_SIPiOSClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBA71215D220620F763CF97 /* Pods_SIPiOSClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		390DC4DD254AA45F00491EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390DC4E0254AA45F00491EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390DC4E2254AA45F00491EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DFD425EECC6074E222E316D /* Pods-SIPiOSClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPiOSClient.release.xcconfig"; path = "Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient.release.xcconfig"; sourceTree = "<group>"; };
+		9E548749DA52BD71CBA278D8 /* Pods-SIPiOSClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPiOSClient.debug.xcconfig"; path = "Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBA71215D220620F763CF97 /* Pods_SIPiOSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIPiOSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4051DFD03708CDAAE9AA0642 /* Pods_SIPiOSClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				390DC4D3254AA45D00491EB6 /* SIPiOSClient */,
 				390DC4D2254AA45D00491EB6 /* Products */,
+				F2709F4C7FF8C234746577D5 /* Pods */,
+				E78760EB86A13DCD74911D49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = SIPiOSClient;
 			sourceTree = "<group>";
 		};
+		E78760EB86A13DCD74911D49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA71215D220620F763CF97 /* Pods_SIPiOSClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2709F4C7FF8C234746577D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E548749DA52BD71CBA278D8 /* Pods-SIPiOSClient.debug.xcconfig */,
+				5DFD425EECC6074E222E316D /* Pods-SIPiOSClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390DC4E5254AA45F00491EB6 /* Build configuration list for PBXNativeTarget "SIPiOSClient" */;
 			buildPhases = (
+				4E2F441CC30C27BB674752E9 /* [CP] Check Pods Manifest.lock */,
 				390DC4CD254AA45D00491EB6 /* Sources */,
 				390DC4CE254AA45D00491EB6 /* Frameworks */,
 				390DC4CF254AA45D00491EB6 /* Resources */,
+				230A4BAD19DDA5591FE767C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		230A4BAD19DDA5591FE767C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2F441CC30C27BB674752E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SIPiOSClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		390DC4CD254AA45D00491EB6 /* Sources */ = {
@@ -283,12 +351,14 @@
 		};
 		390DC4E6254AA45F00491EB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E548749DA52BD71CBA278D8 /* Pods-SIPiOSClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z8YTUEVW;
 				INFOPLIST_FILE = SIPiOSClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +372,14 @@
 		};
 		390DC4E7254AA45F00491EB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFD425EECC6074E222E316D /* Pods-SIPiOSClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z8YTUEVW;
 				INFOPLIST_FILE = SIPiOSClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
