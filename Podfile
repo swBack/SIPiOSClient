@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'SIPiOSClient' do
  pod 'SocketRocket'
+ pod 'SwiftLint'
 end

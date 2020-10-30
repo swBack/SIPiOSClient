@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		390DC4D5254AA45D00491EB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DC4D4254AA45D00491EB6 /* AppDelegate.swift */; };
-		390DC4D7254AA45D00491EB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DC4D6254AA45D00491EB6 /* SceneDelegate.swift */; };
 		390DC4D9254AA45D00491EB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DC4D8254AA45D00491EB6 /* ViewController.swift */; };
 		390DC4DC254AA45D00491EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DA254AA45D00491EB6 /* Main.storyboard */; };
 		390DC4DE254AA45F00491EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DD254AA45F00491EB6 /* Assets.xcassets */; };
 		390DC4E1254AA45F00491EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390DC4DF254AA45F00491EB6 /* LaunchScreen.storyboard */; };
+		390DC4F2254AAC7A00491EB6 /* iOConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DC4F1254AAC7A00491EB6 /* iOConnector.swift */; };
+		390DC4F7254AACF200491EB6 /* IOConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390DC4F6254AACF200491EB6 /* IOConfigurator.swift */; };
 		4051DFD03708CDAAE9AA0642 /* Pods_SIPiOSClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBA71215D220620F763CF97 /* Pods_SIPiOSClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		390DC4D1254AA45D00491EB6 /* SIPiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		390DC4D4254AA45D00491EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		390DC4D6254AA45D00491EB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		390DC4D8254AA45D00491EB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		390DC4DB254AA45D00491EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		390DC4DD254AA45F00491EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390DC4E0254AA45F00491EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390DC4E2254AA45F00491EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390DC4F1254AAC7A00491EB6 /* iOConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOConnector.swift; sourceTree = "<group>"; };
+		390DC4F6254AACF200491EB6 /* IOConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOConfigurator.swift; sourceTree = "<group>"; };
 		5DFD425EECC6074E222E316D /* Pods-SIPiOSClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPiOSClient.release.xcconfig"; path = "Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient.release.xcconfig"; sourceTree = "<group>"; };
 		9E548749DA52BD71CBA278D8 /* Pods-SIPiOSClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPiOSClient.debug.xcconfig"; path = "Target Support Files/Pods-SIPiOSClient/Pods-SIPiOSClient.debug.xcconfig"; sourceTree = "<group>"; };
 		CEBA71215D220620F763CF97 /* Pods_SIPiOSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIPiOSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +65,8 @@
 		390DC4D3254AA45D00491EB6 /* SIPiOSClient */ = {
 			isa = PBXGroup;
 			children = (
+				390DC4F4254AACB300491EB6 /* socket */,
 				390DC4D4254AA45D00491EB6 /* AppDelegate.swift */,
-				390DC4D6254AA45D00491EB6 /* SceneDelegate.swift */,
 				390DC4D8254AA45D00491EB6 /* ViewController.swift */,
 				390DC4DA254AA45D00491EB6 /* Main.storyboard */,
 				390DC4DD254AA45F00491EB6 /* Assets.xcassets */,
@@ -72,6 +74,23 @@
 				390DC4E2254AA45F00491EB6 /* Info.plist */,
 			);
 			path = SIPiOSClient;
+			sourceTree = "<group>";
+		};
+		390DC4F4254AACB300491EB6 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				390DC4F1254AAC7A00491EB6 /* iOConnector.swift */,
+				390DC4F5254AACBB00491EB6 /* Config */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
+		390DC4F5254AACBB00491EB6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				390DC4F6254AACF200491EB6 /* IOConfigurator.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		E78760EB86A13DCD74911D49 /* Frameworks */ = {
@@ -207,7 +226,8 @@
 			files = (
 				390DC4D9254AA45D00491EB6 /* ViewController.swift in Sources */,
 				390DC4D5254AA45D00491EB6 /* AppDelegate.swift in Sources */,
-				390DC4D7254AA45D00491EB6 /* SceneDelegate.swift in Sources */,
+				390DC4F7254AACF200491EB6 /* IOConfigurator.swift in Sources */,
+				390DC4F2254AAC7A00491EB6 /* iOConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z8YTUEVW;
 				INFOPLIST_FILE = SIPiOSClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z8YTUEVW;
 				INFOPLIST_FILE = SIPiOSClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
